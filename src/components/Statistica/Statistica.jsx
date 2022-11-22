@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 export const Statistica = ({good,neutral,bad,total,positivePercentage}) => {
     return (
-        total > 0 ? // we have data
+        total > 0 ? // if we have data in state
             <ul className={css.statistic}> 
             <li key="1" className={css.stat}>Good: {good}</li>
             <li key="2" className={css.stat}>Neutral: {neutral}</li>
