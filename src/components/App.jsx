@@ -20,7 +20,7 @@ export class App extends Component {
   countTotalFeedback() { return this.state.goodCount + this.state.neutralCount + this.state.badCount }
 
   countPositiveFeedbackPercentage() {
-      if(this.countTotalFeedback()===0){return "0"} 
+      if(this.countTotalFeedback()===0){return 0} 
       return this.state.goodCount / this.countTotalFeedback() //precentage value as number
   }
 

@@ -1,4 +1,5 @@
 import css from './Statistica.module.css'; 
+import PropTypes from "prop-types";
 
 export const Statistica = ({good,neutral,bad,total,positivePercentage}) => {
     return (
@@ -13,4 +14,12 @@ export const Statistica = ({good,neutral,bad,total,positivePercentage}) => {
             :<div className={css.zeroFeed}>There is no feedback!</div> // 0 data in state
 )
 
+}
+
+Statistica.propTypes = {
+    good:PropTypes.number.isRequired,
+    neutral:PropTypes.number.isRequired,
+    bad:PropTypes.number.isRequired,
+    total:PropTypes.number.isRequired,
+    positivePercentage:PropTypes.number.isRequired
 }
