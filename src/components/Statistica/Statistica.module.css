@@ -1,0 +1,14 @@
+.statistic{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+}
+
+.stat{
+    list-style: none;
+}
+
+.zeroFeed{
+    padding-top: 10px;
+}
